@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="border:blue; border-width:10px; border-style:outset;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@
    
     <title>Donut Maker</title>
 </head>
-<body>
+<body class="grid-container">
    <header class="topnav">
   <a   class="navmenuelement" href="#how">How To</a>
   <a   class="navmenuelement" href="#contact">Contact</a>
@@ -22,18 +22,26 @@
   
   </header>
 
-    <div id="output" class="container">
+  
+   
+  
+  <div id="output" class="container">
+    
     <table class="table">
      <thead>
+     
       <div class="dropdown">
+        
         <span><h1>Donut Shop</h1></span>
+        
         <div class="dropdown-content">
         <p>Roman Shmigelskyi</p>
         <button id="stop" class="btn btn-success">reset</button>
         </div>
      
-     
+       
       </div>
+
      </thead>
       <tbody>
         <tr class="success">
@@ -66,18 +74,20 @@
     </table>
    
   </div>
-   
+  
+  <div  class="help">
+
  <p id="about">
-<h3 style="padding-left:60px;"> About</h3>
-<h4 width="60%" align="justify" style="padding-left:100px;" >
+<h3 style="padding-left:60px; padding-right: 20px "> About</h3>
+<h4 width="50%" align="justify" style="padding-left:100px;" >
 You have been contracted by Fred the Baker Baking Company to take a concept, Donut Maker Clicker, from the drawing board to the browser. Fred the Baker is tired of making real donuts and is ready to retire. He needs our help to keep his love of donuts alive. He wants you to create a game that uses button clicks to create virtual donuts for the world to enjoy. But all those early mornings of donut making may have tired out his brain because he has some strange requirements.
 </h4> 
 </br></br>
 </p>
  
   <p id="how">
-<h3 style="padding-left:60px;">How to play</h3>
-<h4 width="60%" align="justify" style="padding-left:100px;">
+<h3 style="padding-left:60px; padding-right: 20px">How to play</h3>
+<h4 width="50%" align="justify" style="padding-left:100px;">
   Donut Count ==>      The number of Donuts you have created by clicking, either manually or with an Auto Clicker.
 </br></br>
   Auto Clicker  ==>     Auto Clickers will automatically click for us every 2 second, so we don't have to click manually. To start clik TIMER.
@@ -86,11 +96,14 @@ You have been contracted by Fred the Baker Baking Company to take a concept, Don
 </br></br>
 To restart hover over DONAT SHOP and click RESET.
 
-</br></br>
 </h4>
 </br>
   </p>
-  <h3 style="padding-left:60px;"> Contact info</h3>
+</div>
+<canvas id="canvas" class="pic"></canvas>
+<div class="footer">
+ 
+<h3 style="padding-left:60px;"> Contact info</h3>
   <div style="padding-left:100px;">
 <p id="contact" >
  
@@ -101,9 +114,11 @@ sssssss@ssssss.sss</br></br>
 
 </p>
 </div>
+</div>
       
     <script src="../src/js/app.js"></script>
       <script src="../src/js/donat.js"></script>
       <script src="../src/js/script.js"></script>
+      <script src="../src/js/particles.js"></script>
 </body>
 </html>

@@ -1,3 +1,12 @@
+#canvas{
+  position: jastifai;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+
+
+
 button {
     background-color: #c8c1cf; /* Green */
     color: rgb(31, 28, 28);
@@ -47,12 +56,32 @@ button {
 margin: 10px;
   }
 
-h4 {
-width:600px;
-
-
+.pic{
+  background-color: rgba(167, 104, 104, 0.5);
+  height:600px;
+width: 800px;
+}
+.help{
+  padding: 14px, 26px;
+ 
+   margin: 20px;
 }
 
+.topnav { grid-area: header; }
+.help { grid-area: menu; }
+.container { grid-area: main; }
+.pic { grid-area: right; }
+.footer { grid-area: footer; }
 
-  
-  
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'main main'
+    'menu right'
+    'menu right'
+    'footer footer';
+  grid-gap: 10px;
+  background-color: rgba(115, 51, 134, 0.5);
+  padding: 10px;
+}

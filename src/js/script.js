@@ -13,13 +13,14 @@ TimeInput.value = bakery.getKooff();
 
 
 StopBotton.addEventListener("click", function(){
-   
+  
     window.location.reload();
     
 });
 
 
 DonatButton.addEventListener("click", function () {
+   
     bakery.accelerate();
     if (bakery.donats>=bakery.kooffprice) 
     KooffButton.disabled=false;
@@ -48,7 +49,7 @@ KooffButton.addEventListener("click", function () {
 
 
 function updateDashboard() {
-   
+    spawnSpinningDonut();
     bakery.donats = (bakery.donats + Math.round((bakery.bakerr*bakery.kooff)));
 
     console.log(bakery.time, "  ", bakery.donats, "   ", bakery.bakerr, " update changes");
